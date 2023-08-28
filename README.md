@@ -32,7 +32,7 @@ This repository provides open-source files of the paper:
       Jikai Xu, Lei Wu, and
       <a href="http://hxu.rocks/" target="_blank"> Huazhe Xu</a>
       <br>
-      <em>Submitted to RAL</em> 2023
+      <em>Under Review</em>
       <br>
       <a href="">Paper</a> /
       <a href="https://linchangyi1.github.io/9DTact/" target="_blank">Project Page</a> /
