@@ -1,0 +1,23 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="10">
+            <item index="0" class="java.lang.String" itemvalue="gym" />
+            <item index="1" class="java.lang.String" itemvalue="wandb" />
+            <item index="2" class="java.lang.String" itemvalue="params-proto" />
+            <item index="3" class="java.lang.String" itemvalue="ml_logger" />
+            <item index="4" class="java.lang.String" itemvalue="ml_dash" />
+            <item index="5" class="java.lang.String" itemvalue="cv_bridge" />
+            <item index="6" class="java.lang.String" itemvalue="scipy" />
+            <item index="7" class="java.lang.String" itemvalue="rospy" />
+            <item index="8" class="java.lang.String" itemvalue="message_filters" />
+            <item index="9" class="java.lang.String" itemvalue="sensor_msgs" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

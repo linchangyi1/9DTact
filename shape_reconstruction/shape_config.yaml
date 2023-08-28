@@ -1,0 +1,38 @@
+sensor_id: 1
+calibration_root_dir: ../shape_reconstruction/calibration
+
+camera_setting:
+  camera_channel: 0
+  resolution:
+    - 640 # width
+    - 480 # height
+  fps: 30
+
+camera_calibration:
+  row_points: 7
+  col_points: 9
+  grid_distance: 2.5
+  camera_calibration_dir: /camera_calibration
+  image_format: png
+  row_index_path: /row_index.npy
+  col_index_path: /col_index.npy
+  position_scale_path: /position_scale.npy
+  crop_size:
+    - 345
+    - 460
+
+depth_calibration:
+  depth_calibration_dir: /depth_calibration
+  BallRad: 4.0
+  circle_detect_gray: 3
+  show_circle_detection: False
+  Pixel_to_Depth_path: /Pixel_to_Depth.npy
+
+sensor_reconstruction:
+  lighting_threshold: 2
+  kernel_list:
+    - 7
+    - 7
+  contact_gray_base: 20
+  depth_k: 100
+
