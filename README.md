@@ -50,7 +50,7 @@ pip install -e .
 
 
 ## 3D Shape Reconstruction <a name="reconstruction"></a>
-For all terminals used in this section, they are based on the shape_reconstruction directory and 9dtact conda environment:
+For all the terminals used in this section, they are located in the **shape_reconstruction** directory and based on the **9dtact** conda environment:
 ```bash
 cd shape_reconstruction
 conda activate 9dtact
