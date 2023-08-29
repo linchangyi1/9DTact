@@ -22,23 +22,17 @@
 **This repository provides open-source files of the paper:**
 
 ![](source/pipelie.png)
-<td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="https://linchangyi1.github.io/9DTact/" target="_blank">
-      <b> 9DTact: A Compact Vision-Based Tactile Sensor for Accurate 3D Shape Reconstruction and Generalizable 6D Force Estimation </b>
-      </a>
-      <br>
-      <a href="https://linchangyi1.github.io/" target="_blank">Changyi Lin</a>, 
-      <a href="https://doublehan07.github.io/" target="_blank"> Han Zhang</a>,
-      Jikai Xu, Lei Wu, and
-      <a href="http://hxu.rocks/" target="_blank"> Huazhe Xu</a>
-      <br>
-      <em>Under Review</em>
-      <br>
-      <a href="">Paper</a> /
-      <a href="https://linchangyi1.github.io/9DTact/" target="_blank">Project Page</a> /
-      <a href="">Video Instructions</a>
-    <br>
-</td>
+
+<b>9DTact: A Compact Vision-Based Tactile Sensor for Accurate 3D Shape Reconstruction and Generalizable 6D Force Estimation</b> <br>
+[Changyi Lin](https://linchangyi1.github.io/),
+[Han Zhang](https://doublehan07.github.io/),
+Jikai Xu, Lei Wu, and
+[Huazhe Xu](http://hxu.rocks/) <br>
+Under Review, 2023 <br>
+[Website](https://linchangyi1.github.io/9DTact/) /
+[Paper](https://arxiv.org/abs/2308.14277) /
+[Video Instructions]()
+
 
 ## Installation <a name="installation"></a>
 #### Create a conda environment:
