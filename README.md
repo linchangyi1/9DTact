@@ -31,7 +31,17 @@ Jikai Xu, Lei Wu, and
 Under Review, 2023 <br>
 [Website](https://linchangyi1.github.io/9DTact/) /
 [Paper](https://arxiv.org/abs/2308.14277) /
-[Video Instructions]()
+[Video Tutorial](https://www.youtube.com/watch?v=-oRtW398JDY)
+
+```
+@article{lin20239dtact,
+  title={9DTact: A Compact Vision-Based Tactile Sensor for Accurate 3D Shape Reconstruction and Generalizable 6D Force Estimation},
+  author={Lin, Changyi and Zhang, Han and Xu, Jikai and Wu, Lei and Xu, Huazhe},
+  journal={arXiv preprint arXiv:2308.14277},
+  year={2023}
+}
+```
+
 
 
 ## Installation <a name="installation"></a>
