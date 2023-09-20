@@ -164,7 +164,8 @@ class ForceEstimation:
             run_name = model_type + '_' + optimizer + '_lr-' + f'{learning_rate:.4f}' + '_OBJ-' + \
                        str(bool(test_object))[0] + '_MIX-' + str(bool(mixed_image))[0]
             if use_wandb:
-                self.run_log = force_estimation.init(project="Force_Estimation", config=wandb_config, name=run_name)
+                import wandb
+                self.run_log = wandb.init(project="Force_Estimation", config=wandb_config, name=run_name)
             self.train()
         else:
             self.save_dir = cfg['save_dir'] + '/' + model_type + str(cfg['weights'][cfg['model_choice']][0])
