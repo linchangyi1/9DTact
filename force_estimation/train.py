@@ -78,7 +78,7 @@ class ForceEstimation:
         model_name = args.model_name if args.model_name is not None else cfg['model_list'][cfg['model_choice']][0]
         model_layer = args.model_layer if args.model_name is not None else cfg['model_list'][cfg['model_choice']][1]
         model_type = model_name + '-' + str(model_layer)
-        optimizer = args.optimizer if args.optimizer is not None else 'SGD'
+        optimizer = args.optimizer if args.optimizer is not None else 'Adam'
         self.lrs = args.lrs if args.lrs is not None else True
         image_type = args.image_type if args.image_type is not None else cfg['image_type']
         cuda_index = args.cuda_index if args.cuda_index is not None else cfg['cuda_index']

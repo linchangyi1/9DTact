@@ -51,7 +51,8 @@ conda create -n 9dtact python=3.8
 ```
 #### Install pytorch (choose the version that is compatible with your computer):
 ```bash
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+conda activate 9dtact
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 ```
 #### In this repository, install the other requirements:
 ```bash
