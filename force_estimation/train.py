@@ -15,7 +15,6 @@ np.set_printoptions(suppress=True)
 import argparse
 from data import DTactDataset
 from model import *
-import force_estimation
 import cv2
 
 # use_wandb = True
