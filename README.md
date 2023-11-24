@@ -133,13 +133,13 @@ python3 split_train_test(objects).py
 ```
 
 ### 4. Model Training <a name="training"></a>
-If use the defaulted parameters, just run:
+If using the defaulted parameters, just run:
 ```bash
 cd force_estimation
 python3 train.py
 ```
 You may also choose to use [Weights and Bias (wandb)](https://docs.wandb.ai/quickstart) by setting use_wandb as True,
-which help to track the training performance.
+which helps to track the training performance.
 
 ### 5. Force Estimation <a name="inference"></a>
 You need to specify a model saved in the 'saved_models' directory as an estimator,
