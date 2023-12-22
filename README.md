@@ -31,7 +31,6 @@ Jikai Xu, Lei Wu, and
 RAL, 2023 <br>
 [Website](https://linchangyi1.github.io/9DTact/) /
 [Arxiv Paper](https://arxiv.org/abs/2308.14277) /
-[IEEE Paper](https://ieeexplore.ieee.org/document/10342722) /
 [Video Tutorial](https://www.youtube.com/watch?v=-oRtW398JDY)
 
 ```
