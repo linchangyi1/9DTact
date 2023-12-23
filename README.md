@@ -37,8 +37,9 @@ RAL, 2023 <br>
 @article{lin20239dtact,
   title={9DTact: A Compact Vision-Based Tactile Sensor for Accurate 3D Shape Reconstruction and Generalizable 6D Force Estimation},
   author={Lin, Changyi and Zhang, Han and Xu, Jikai and Wu, Lei and Xu, Huazhe},
-  journal={arXiv preprint arXiv:2308.14277},
-  year={2023}
+  journal={IEEE Robotics and Automation Letters},
+  year={2023},
+  publisher={IEEE}
 }
 ```
 
