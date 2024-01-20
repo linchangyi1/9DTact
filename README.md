@@ -19,7 +19,7 @@
    3. [Simultaneous Shape Reconstruction and Force Estimation (SSAF) in ROS](#shape_force)
 
 ## Overview <a name="overview"></a>
-**This repository provides open-source files of the paper:**
+**This repository provides the open-source files of the paper:**
 
 ![](source/pipelie.png)
 
