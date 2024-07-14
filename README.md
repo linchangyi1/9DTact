@@ -19,7 +19,7 @@
    3. [Simultaneous Shape Reconstruction and Force Estimation (SSAF) in ROS](#shape_force)
 
 ## Overview <a name="overview"></a>
-**This repository provides the open-source files of the paper:**
+**This repository contains the code and the hardware source files for the paper:**
 
 ![](source/pipelie.png)
 
@@ -33,17 +33,6 @@ RAL, 2023 <br>
 [Arxiv Paper](https://arxiv.org/abs/2308.14277) /
 [Video Tutorial](https://www.youtube.com/watch?v=-oRtW398JDY) /
 [Bom (CN)](https://docs.google.com/document/d/1d8c0Pbj_9otzWVxE94c6c-DW61ETBbJZIjVFKe4_OXI/edit?usp=sharing)
-
-
-```
-@article{lin20239dtact,
-  title={9DTact: A Compact Vision-Based Tactile Sensor for Accurate 3D Shape Reconstruction and Generalizable 6D Force Estimation},
-  author={Lin, Changyi and Zhang, Han and Xu, Jikai and Wu, Lei and Xu, Huazhe},
-  journal={IEEE Robotics and Automation Letters},
-  year={2023},
-  publisher={IEEE}
-}
-```
 
 
 
