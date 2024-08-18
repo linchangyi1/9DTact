@@ -1,4 +1,0 @@
-data
-force_estimation
-model
-shape_reconstruction
