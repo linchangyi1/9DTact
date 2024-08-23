@@ -3,9 +3,9 @@ import glob
 import random
 
 object_number = 175
-select_number = 2
+select_number = 18
 select_object = random.sample(range(1, object_number + 1), select_number)
-print(select_object)
+print('Selected objects: ', select_object)
 
 train_list = []
 test_list = []
@@ -22,47 +22,40 @@ for object_id in range(object_number):
 random.shuffle(train_list)
 train_save = np.array(train_list)
 test_save = np.array(test_list)
-print(len(train_save))
-print(len(test_save))
-print(test_list)
+print("Num train images: ", len(train_save))
+print("Num test images: ", len(test_save))
 np.save(root_path + '/train_images_object.npy', train_save)
 np.save(root_path + '/test_images_object.npy', test_save)
 
-mixed_image_paths = []
+train_mixed_images = []
 for image_path in train_save:
     # print(image_path)
     image_path_split = image_path.split('image')
-    mixed_image_path = image_path_split[0] + 'mixed_image' + image_path_split[-1]
-    mixed_image_paths.append(mixed_image_path)
-mixed_image_paths = np.array(mixed_image_paths)
-np.save(root_path + '/train_mixed_images_object.npy', mixed_image_paths)
+    train_mixed_image = image_path_split[0] + 'mixed_image' + image_path_split[-1]
+    train_mixed_images.append(train_mixed_image)
+np.save(root_path + '/train_mixed_images_object.npy', np.array(train_mixed_images))
 
-mixed_image_paths = []
+test_mixed_images = []
 for image_path in test_save:
     # print(image_path)
     image_path_split = image_path.split('image')
-    mixed_image_path = image_path_split[0] + 'mixed_image' + image_path_split[-1]
-    mixed_image_paths.append(mixed_image_path)
-mixed_image_paths = np.array(mixed_image_paths)
-np.save(root_path + '/test_mixed_images_object.npy', mixed_image_paths)
+    test_mixed_image = image_path_split[0] + 'mixed_image' + image_path_split[-1]
+    test_mixed_images.append(test_mixed_image)
+np.save(root_path + '/test_mixed_images_object.npy', np.array(test_mixed_images))
 
-wrench_paths = []
+train_wrenches = []
 for image_path in train_save:
-    # print(image_path)
     image_path_split = image_path.split('image')
-    force_path = str(image_path_split[0] + 'wrench' + image_path_split[1].split('.')[0] + '_norm.npy')
-    wrench_paths.append(force_path)
-wrench_paths = np.array(wrench_paths)
-np.save(root_path + '/train_wrench_object.npy', wrench_paths)
+    train_wrench = str(image_path_split[0] + 'wrench' + image_path_split[1].split('.')[0] + '_norm.npy')
+    train_wrenches.append(train_wrench)
+np.save(root_path + '/train_wrench_object.npy', np.array(train_wrenches))
 
-wrench_paths = []
+test_wrenches = []
 for image_path in test_save:
-    # print(image_path)
     image_path_split = image_path.split('image')
-    force_path = str(image_path_split[0] + 'wrench' + image_path_split[1].split('.')[0] + '_norm.npy')
-    wrench_paths.append(force_path)
-wrench_paths = np.array(wrench_paths)
-np.save(root_path + '/test_wrench_object.npy', wrench_paths)
+    test_wrench = str(image_path_split[0] + 'wrench' + image_path_split[1].split('.')[0] + '_norm.npy')
+    test_wrenches.append(test_wrench)
+np.save(root_path + '/test_wrench_object.npy', np.array(test_wrenches))
 
 
 

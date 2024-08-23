@@ -63,7 +63,7 @@ conda activate 9dtact
 Before you start, 3d print the [calibration board](9DTact_Design/fabrication/calibration_board.STL).<br>
 Run:
 ```bash
-python3 _1_Camera_Calibration.py
+python _1_Camera_Calibration.py
 ```
 Just follow the printed instructions.
 
@@ -73,13 +73,13 @@ Firstly, prepare a ball with a radius of 4.0 mm.
 4.0 mm is just a recommendation.)<br>
 Then, run:
 ```bash
-python3 _2_Sensor_Calibration.py
+python _2_Sensor_Calibration.py
 ```
 Just follow the printed instructions.
 
 ### 3. Shape Reconstruction <a name="shape_reconstruction"></a>
 ```bash
-python3 _3_Shape_Reconstruction.py
+python _3_Shape_Reconstruction.py
 ```
 
 ## 6D Force Estimation <a name="estimation"></a>
@@ -99,13 +99,13 @@ roslaunch rokubimini_serial rokubimini_serial.launch
 source ~/xxx/bota_ws/devel/setup.bash
 cd data_collection
 conda activate 9dtact
-python3 collect_data.py
+python collect_data.py
 ```
 #### At the third terminal, open the 9DTact sensor:
 ```bash
 cd shape-force-ros
 conda activate 9dtact
-python3 _1_Sensor_ros.py
+python _1_Sensor_ros.py
 ```
 
 ### 3. Data Processing <a name="processing"></a>
@@ -113,22 +113,22 @@ python3 _1_Sensor_ros.py
 ```bash
 cd data_collection
 conda activate 9dtact
-python3 wrench_normalization.py  # remember to modify the object_num
+python wrench_normalization.py  # remember to modify the object_num
 ```
 #### At the same terminal, split the data by running:
 ```bash
-python3 split_train_test.py
+python split_train_test.py
 ```
 and also:
 ```bash
-python3 split_train_test(objects).py
+python split_train_test(objects).py
 ```
 
 ### 4. Model Training <a name="training"></a>
-If using the defaulted parameters, just run:
+To train the model on the stadard training dataset, run:
 ```bash
 cd force_estimation
-python3 train.py
+python train.py --model_name="Densenet" --model_layer=169 --optimizer="ADAM" --lrs=False --image_type="RGB" --cuda_index=6 --resize_img=False --train_mode=True --test_object=False --mixed_image=True --pretrained=False --batch_size=64 --num_epoch=200 --learning_rate=5.0e-4 --weight_decay=0.0
 ```
 You may also choose to use [Weights and Bias (wandb)](https://docs.wandb.ai/quickstart) by setting use_wandb as True,
 which helps to track the training performance.
@@ -139,7 +139,7 @@ by modifying the 'weights' parameters in the [force_config.yaml](force_estimatio
 After that, run:
 ```bash
 cd force_estimation
-python3 _1_Force_Estimation.py
+python _1_Force_Estimation.py
 ```
 
 
@@ -149,13 +149,13 @@ python3 _1_Force_Estimation.py
 ```bash
 cd shape-force_ros
 conda activate 9dtact
-python3 _1_Sensor_ros.py
+python _1_Sensor_ros.py
 ```
 #### At the second terminal, run:
 ```bash
 cd shape-force_ros
 conda activate 9dtact
-python3 _2_Shape_Reconstruction_ros.py
+python _2_Shape_Reconstruction_ros.py
 ```
 
 ### 2. Force Estimation in ROS <a name="force_ros"></a>
@@ -163,31 +163,31 @@ python3 _2_Shape_Reconstruction_ros.py
 ```bash
 cd shape-force_ros
 conda activate 9dtact
-python3 _1_Sensor_ros.py
+python _1_Sensor_ros.py
 ```
 #### At the second terminal, run:
 ```bash
 cd shape-force_ros
 conda activate 9dtact
-python3 _3_Force_Estimation_ros.py
+python _3_Force_Estimation_ros.py
 ```
 #### (Optional for visualization) At the third terminal, open the visualization window:
 ```bash
 cd force_estimation
 conda activate 9dtact
-python3 force_visualizer.py
+python force_visualizer.py
 ```
 ### 3. Simultaneous Shape Reconstruction and Force Estimation (SSAF) in ROS <a name="shape_force"></a>
 #### At the first terminal, open the force estimator:
 ```bash
 cd shape-force_ros
 conda activate 9dtact
-python3 _3_Force_Estimation_ros.py
+python _3_Force_Estimation_ros.py
 ```
 #### At the second terminal, run:
 ```bash
 cd shape-force_ros
 conda activate 9dtact
-python3 _4_Shape_Force_ros.py
+python _4_Shape_Force_ros.py
 ```
 

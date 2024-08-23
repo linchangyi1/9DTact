@@ -14,17 +14,20 @@ for i in range(len(wrench_range)):
 wrench_span = max_wrench - min_wrench
 
 all_wrench = glob.glob(root_path + '/wrench/*/*.npy')
+print('There are {} wrenches.'.format(len(all_wrench)))
+count = 0
 for wrench_path in all_wrench:
     if 'norm' in wrench_path:
         os.remove(wrench_path)
+        count += 1
+        # print('The normalized wrench {} is removed.'.format(wrench_path))
+print("Total {} normalized wrenches are removed.".format(count))
 
 # judge whether there is any wrench beyond the range and remove the image and wrench
 original_wrench = glob.glob(root_path + '/wrench/*/*.npy')
 print('There are {} wrenches.'.format(len(original_wrench)))
-
 original_images = glob.glob(root_path + '/image/*/*.png')
 print('There are {} images.'.format(len(original_images)))
-
 count = 0
 for wrench_path in original_wrench:
     wrench = np.load(wrench_path)
@@ -36,10 +39,7 @@ for wrench_path in original_wrench:
         image_postfix = split_path[-1].split('npy')
         image_path = split_path[0] + 'image' + image_postfix[0] + 'png'
         os.remove(image_path)
-    # print(sum((wrench - min_wrench) < 0))
-    # print(sum((wrench - max_wrench) > 0))
 print('{} wrench beyond the range.'.format(count))
-
 
 # find whether there is any image deleted
 original_wrench = glob.glob(root_path + '/wrench/*/*.npy')
@@ -49,6 +49,8 @@ for wrench_path in original_wrench:
     image_path = split_path[0] + 'image' + image_postfix[0] + 'png'
     if not os.path.exists(image_path):
         os.remove(wrench_path)
+        mixed_image_path = split_path[0] + 'mixed_image' + image_postfix[0] + 'png'
+        os.remove(mixed_image_path)
         print('The image {} is removed, so the wrench {} is also being removed.'.format(image_path, wrench_path))
         # print(wrench_path)
 
@@ -57,12 +59,14 @@ for wrench_path in original_wrench:
 for i in range(object_num):
     object_ID = i + 1
     images_path = sorted(glob.glob(root_path + '/image/' + str(object_ID) + '/*.png'), key=os.path.getmtime)
-    # print(images_path)
     for j in range(len(images_path)):
         src_path = images_path[j]
         dst_path = root_path + '/image/' + str(object_ID) + '/' + str(j+1) + '.png'
         os.rename(src_path, dst_path)
         split_path = src_path.split('image')
+        src_path = split_path[0] + 'mixed_image' + split_path[-1]
+        dst_path = root_path + '/mixed_image/' + str(object_ID) + '/' + str(j + 1) + '.png'
+        os.rename(src_path, dst_path)
         wrench_postfix = split_path[-1].split('png')
         src_path = split_path[0] + 'wrench' + wrench_postfix[0] + 'npy'
         dst_path = root_path + '/wrench/' + str(object_ID) + '/' + str(j + 1) + '.npy'

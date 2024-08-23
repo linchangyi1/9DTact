@@ -3,56 +3,49 @@ import glob
 import random
 
 
-# used for RGB and NOT MIXED
 root_path = '../Dataset'
-test_number = 1000
-images = glob.glob(root_path + '/image/*/*.png')
-print(len(images))
-random.shuffle(images)
-train_save = np.array(images[:-test_number])
-test_save = np.array(images[-test_number::])
-print(len(train_save))
-print(len(test_save))
-np.save(root_path + '/train_images.npy', train_save)
-np.save(root_path + '/test_images.npy', test_save)
+test_number = 10000
+raw_images = glob.glob(root_path + '/image/*/*.png')
+print("Total raw images: ", len(raw_images))
+random.shuffle(raw_images)
+train_raw_images = np.array(raw_images[:-test_number])
+test_raw_images = np.array(raw_images[-test_number::])
+print("Num train raw images: ", len(train_raw_images))
+print("Num test raw images: ", len(test_raw_images))
+np.save(root_path + '/train_images.npy', train_raw_images)
+np.save(root_path + '/test_images.npy', test_raw_images)
 
-mixed_image_paths = []
-for image_path in train_save:
-    # print(image_path)
+train_mixed_images = []
+for image_path in train_raw_images:
     image_path_split = image_path.split('image')
-    mixed_image_path = image_path_split[0] + 'mixed_image' + image_path_split[-1]
-    mixed_image_paths.append(mixed_image_path)
-mixed_image_paths = np.array(mixed_image_paths)
-np.save(root_path + '/train_mixed_images.npy', mixed_image_paths)
+    train_mixed_image = image_path_split[0] + 'mixed_image' + image_path_split[-1]
+    train_mixed_images.append(train_mixed_image)
+print("Num train mixed images: ", len(train_mixed_images))
+np.save(root_path + '/train_mixed_images.npy', np.array(train_mixed_images))
 
-mixed_image_paths = []
-for image_path in test_save:
-    # print(image_path)
+test_mixed_images = []
+for image_path in test_raw_images:
     image_path_split = image_path.split('image')
-    mixed_image_path = image_path_split[0] + 'mixed_image' + image_path_split[-1]
-    mixed_image_paths.append(mixed_image_path)
-mixed_image_paths = np.array(mixed_image_paths)
-np.save(root_path + '/test_mixed_images.npy', mixed_image_paths)
+    test_mixed_image = image_path_split[0] + 'mixed_image' + image_path_split[-1]
+    test_mixed_images.append(test_mixed_image)
+print("Num test mixed images: ", len(test_mixed_images))
+np.save(root_path + '/test_mixed_images.npy', np.array(test_mixed_images))
 
-wrench_paths = []
-for image_path in train_save:
+train_wrenches = []
+for image_path in train_raw_images:
     image_path_split = image_path.split('image')
-    force_path = str(image_path_split[0] + 'wrench' + image_path_split[1].split('.')[0] + '_norm.npy')
-    wrench_paths.append(force_path)
-wrench_paths = np.array(wrench_paths)
-np.save(root_path + '/train_wrench.npy', wrench_paths)
+    train_wrench = str(image_path_split[0] + 'wrench' + image_path_split[1].split('.')[0] + '_norm.npy')
+    train_wrenches.append(train_wrench)
+print("Num train wrenches: ", len(train_wrenches))
+np.save(root_path + '/train_wrench.npy', np.array(train_wrenches))
 
-
-wrench_paths = []
-for image_path in test_save:
-    # print(image_path)
+test_wrenches = []
+for image_path in test_raw_images:
     image_path_split = image_path.split('image')
-    force_path = str(image_path_split[0] + 'wrench' + image_path_split[1].split('.')[0] + '_norm.npy')
-    wrench_paths.append(force_path)
-wrench_paths = np.array(wrench_paths)
-np.save(root_path + '/test_wrench.npy', wrench_paths)
-
-
+    test_wrench = str(image_path_split[0] + 'wrench' + image_path_split[1].split('.')[0] + '_norm.npy')
+    test_wrenches.append(test_wrench)
+print("Num test wrenches: ", len(test_wrenches))
+np.save(root_path + '/test_wrench.npy', np.array(test_wrenches))
 
 
 def copy_mixed_path():

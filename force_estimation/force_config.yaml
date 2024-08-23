@@ -15,8 +15,8 @@ save_dir: ../saved_models
 weights:
   - - _05-14_17-36-54 # Resnet
     - 87 # epoch
-  - - _06-26_14-58-36 # Densenet
-    - 132 # epoch
+  - - _09-22_15-17-06 # Densenet
+    - 153 # epoch
 eval_batch: 32
 
 cuda_index: 0
