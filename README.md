@@ -17,7 +17,7 @@
    1. [Shape Reconstruction in ROS](#shape_ros)
    2. [Force Estimation in ROS](#force_ros)
    3. [Simultaneous Shape Reconstruction and Force Estimation (SSAF) in ROS](#shape_force)
-6. [DTact Seires Papers](#papers)
+6. [DTact Series Papers](#papers)
 
 ## Overview <a name="overview"></a>
 **This repository contains the code and the hardware source files for the paper:**
@@ -192,7 +192,7 @@ conda activate 9dtact
 python _4_Shape_Force_ros.py
 ```
 
-## DTact Seires Papers <a name="papers"></a>
+## DTact Series Papers <a name="papers"></a>
 - [DTact: A Vision-Based Tactile Sensor that Measures High-Resolution 3D Geometry Directly from Darkness](https://arxiv.org/abs/2209.13916), Lin et al., ICRA 2023
 - [9DTact: A Compact Vision-Based Tactile Sensor for Accurate 3D Shape Reconstruction and Generalizable 6D Force Estimation](https://arxiv.org/abs/2308.14277), Lin et al., RAL 2023
 - [Design and Evaluation of a Rapid Monolithic Manufacturing Technique for a Novel Vision-Based Tactile Sensor: C-Sight](https://www.mdpi.com/1424-8220/24/14/4603), Fan et al., MDPI Sensors 2024
