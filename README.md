@@ -193,7 +193,6 @@ cd shape-force_ros
 conda activate 9dtact
 python _4_Shape_Force_ros.py
 ```
-
 ## DTact Series Papers <a name="papers"></a>
 - [DTact: A Vision-Based Tactile Sensor that Measures High-Resolution 3D Geometry Directly from Darkness](https://arxiv.org/abs/2209.13916), Lin et al., ICRA 2023
 - [9DTact: A Compact Vision-Based Tactile Sensor for Accurate 3D Shape Reconstruction and Generalizable 6D Force Estimation](https://arxiv.org/abs/2308.14277), Lin et al., RAL 2023
@@ -202,5 +201,30 @@ python _4_Shape_Force_ros.py
 - [VET: A Visual-Electronic Tactile System for Immersive Human-Machine Interaction](https://arxiv.org/pdf/2503.23440), Zhang et al., arxiv 2025
 - [PP-Tac: Paper Picking Using Tactile Feedback in Dexterous Robotic Hands](https://arxiv.org/abs/2504.16649), Lin et al., RSS 2025
 - [AllTact Fin Ray: A Compliant Robot Gripper with Omni-Directional Tactile Sensing](https://arxiv.org/pdf/2504.18064), Liang et al., arxiv 2025
+
+## Reference
+```
+@inproceedings{lin2023dtact,
+  title={Dtact: A vision-based tactile sensor that measures high-resolution 3d geometry directly from darkness},
+  author={Lin, Changyi and Lin, Ziqi and Wang, Shaoxiong and Xu, Huazhe},
+  booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={10359--10366},
+  year={2023},
+  organization={IEEE}
+}
+```
+```
+@article{lin20239dtact,
+  title={9dtact: A compact vision-based tactile sensor for accurate 3d shape reconstruction and generalizable 6d force estimation},
+  author={Lin, Changyi and Zhang, Han and Xu, Jikai and Wu, Lei and Xu, Huazhe},
+  journal={IEEE Robotics and Automation Letters},
+  volume={9},
+  number={2},
+  pages={923--930},
+  year={2023},
+  publisher={IEEE}
+}
+```
+
 
 
