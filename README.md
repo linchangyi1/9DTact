@@ -61,7 +61,9 @@ conda activate 9dtact
 ```
 
 ### 1. Camera Calibration <a name="camera_calibration"></a>
-Before you start, 3d print the [calibration board](9DTact_Design/fabrication/calibration_board.STL).<br>
+Before getting started, **adjust the camera focus** by rotating the lens until objects approximately 15 mm away appear clear.
+
+Then, 3d print the [calibration board](9DTact_Design/fabrication/calibration_board.STL).<br>
 Run:
 ```bash
 python _1_Camera_Calibration.py
