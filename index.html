@@ -140,7 +140,7 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <h2 class="title is-3">Key Features!</h2>
+    <h2 class="title is-3" style="margin-top: -50px;">Key Features!</h2>
     <div class="content ">
       <p>
         Accurate 3D shape reconstruction <b>with only white light</b>! <br>
@@ -148,10 +148,20 @@
         <b>Compact, Robust, Low-Cost, Easy-to-Fabricate</b>!
       </p>
     </div>
-    <div class="column">
+    <div class="column" style="margin-top: -10px;">
       <img src="./static/images/pipeline.png" width="100%">
     </div>
+
+    <h2 class="title is-3" style="margin-top: 30px;">Fully Open-Source!</h2>
+    <div class="content">
+        We have fully open-sourced both the hardware and software of 9DTact on <a href="https://github.com/linchangyi1/9DTact">Github</a>.
     </div>
+    <div class="column" style="margin-top: -20px;">
+      <video autoplay muted loop playsinline width="100%">
+        <source src="./static/images/instruction.mp4 " type="video/mp4">
+      </video>
+    </div>
+  </div>
 </section>
 
 
@@ -159,8 +169,8 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <hr style="border: 2px solid rgb(196, 196, 196); width: 100%" > <br>
-    <h2 class="title is-3">Motivation for 3D Shape Reconstruction</h2>
+    <hr style="border: 2px solid rgb(196, 196, 196); width: 100%; margin-top: -40px;" > <br>
+    <h2 class="title is-3" style="margin-top: -10px;">Motivation for 3D Shape Reconstruction</h2>
     <div class="content has-text-justified">
       <p>
         We leveraged the reflective properties of silicone. Black silicone absorbs light, while translucent silicone reflects it.
@@ -179,7 +189,7 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <h2 class="title is-3">Design of 9DTact</h2>
+    <h2 class="title is-3" style="margin-top: -50px;">Design of 9DTact</h2>
     <div class="content has-text-justified">
       <p>
         9DTact is remarkably compact, with the size of only 32.5mmx25.5mmx25.5mm. <br>
@@ -210,7 +220,7 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <h2 class="title is-3">Other Improvements</h2>
+    <h2 class="title is-3" style="margin-top: -50px;">Other Improvements</h2>
     <div class="content has-text-justified">
       <p>
         1. Optimize the acrylic board for more stable tactile images; <br>
@@ -227,7 +237,7 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <h2 class="title is-3">Calibration for 3D Shape Reconstruction</h2>
+    <h2 class="title is-3" style="margin-top: -50px;">Calibration for 3D Shape Reconstruction</h2>
     <div class="content has-text-justified">
       <p>
         We develop a virtual marker-based image rectification method to simultaneous calibrate these parameters: <br>
@@ -245,7 +255,7 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <h2 class="title is-3">Results of 3D Shape Reconstruction</h2>
+    <h2 class="title is-3" style="margin-top: -50px;">Results of 3D Shape Reconstruction</h2>
     <div class="content">
       <p>
         MAE: 0.0462mm, Std: 0.0304mm.
@@ -260,8 +270,8 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <hr style="border: 2px solid rgb(196, 196, 196); width: 100%" > <br>
-    <h2 class="title is-3">Motivation for 6D Force Estimation</h2>
+    <hr style="border: 2px solid rgb(196, 196, 196); width: 100%; margin-top: -40px;" > <br>
+    <h2 class="title is-3" style="margin-top: -10px;">Motivation for 6D Force Estimation</h2>
     <div class="content has-text-justified">
       <p>
         As a hyper-elastic material, the pressed gel tends to flow outward to its neighboring regions, resulting in an increase in thickness in the surrounding areas.
@@ -278,7 +288,7 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <h2 class="title is-3">Gel FLow Visualization</h2>
+    <h2 class="title is-3" style="margin-top: -50px;">Gel FLow Visualization</h2>
     <div class="content has-text-justified">
       <p>
         We visualize the areas becoming darker with red color and brighter areas with green color, the green pixels turn to be much brighter in the object's moving direction.
@@ -303,7 +313,7 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <h2 class="title is-3">Dense Deformation Representation</h2>
+    <h2 class="title is-3" style="margin-top: -50px;">Dense Deformation Representation</h2>
     <div class="content has-text-justified">
       <p>
         1. Darker Channel: contact geometry; <br>
@@ -320,7 +330,7 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <h2 class="title is-3">Data Collection for Force Estimation</h2>
+    <h2 class="title is-3" style="margin-top: -50px;">Data Collection for Force Estimation</h2>
     <div class="content">
       <p>
         We collect over 100K image-force pairs on 175 complex objects, with autonomous image selection.
@@ -344,7 +354,7 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <h2 class="title is-3">Results for 6D Force Estimation</h2>
+    <h2 class="title is-3" style="margin-top: -50px;">Results for 6D Force Estimation</h2>
     <div class="column">
       <img src="./static/images/table_results.png" width="100%">
     </div>
@@ -373,7 +383,7 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <h2 class="title is-3">Demos on Unseen Objects</h2>
+    <h2 class="title is-3" style="margin-top: -50px;">Demos on Unseen Objects</h2>
     <div class="column">
       <video id="render-video" controls autoplay muted loop width="85%">
         <source src="./static/images/shape_force_wrench.mp4" type="video/mp4">
@@ -397,21 +407,7 @@
 <section class="section">
   <div class="container is-max-desktop">
   <div class="container is-centered has-text-centered">
-    <hr style="border: 2px solid rgb(196, 196, 196); width: 100%" > <br>
-    <h2 class="title is-3">Fully Open-Source</h2>
-    <div class="content has-text-justified">
-      <p>
-        We have fully open-sourced both the hardware and software of 9DTact on <a href="https://github.com/linchangyi1/9DTact">Github</a>.
-        <br>Follow the video instructions to build your own 9DTact tactile sensor!
-      </p>
-    </div>
-    <div class="column">
-      <video id="render-video" controls autoplay muted loop width="100%">
-        <source src="./static/images/instruction.mp4 " type="video/mp4">
-      </video>
-    </div>
-  </div>
-
+    <hr style="border: 2px solid rgb(196, 196, 196); width: 100%; margin-top: -40px;" > <br>
     <div class="column is-max-desktop">
       <h2 class="title is-3 is-centered has-text-centered">Tutorial in English</h2>
       <div class="publication-video">
@@ -438,7 +434,7 @@
     <div class="columns is-centered has-text-centered">
       <!-- <div class="column is-four-fifths"> -->
       <div class="column is-full">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3" style="margin-top: -50px;">Abstract</h2>
         <div class="content has-text-justified">
           <p>
           The advancements in vision-based tactile sensors
