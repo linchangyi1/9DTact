@@ -33,7 +33,8 @@ RAL, 2023 <br>
 [Website](https://linchangyi1.github.io/9DTact/) /
 [Arxiv Paper](https://arxiv.org/abs/2308.14277) /
 [Video Tutorial](https://www.youtube.com/watch?v=-oRtW398JDY) /
-[Bom (CN)](https://docs.google.com/document/d/1d8c0Pbj_9otzWVxE94c6c-DW61ETBbJZIjVFKe4_OXI/edit?usp=sharing)
+[Bom (CN)](https://docs.google.com/document/d/1d8c0Pbj_9otzWVxE94c6c-DW61ETBbJZIjVFKe4_OXI/edit?usp=sharing) /
+[Production](https://e.tb.cn/h.hJlaI3aoyO30DGk?tk=K9Vm4iYdHwj)
 
 
 
@@ -84,6 +85,7 @@ Just follow the printed instructions.
 ```bash
 python _3_Shape_Reconstruction.py
 ```
+Press 'y' when the tactile image is stably captured, which will served as the reference image.
 
 ## 6D Force Estimation <a name="estimation"></a>
 ### 1. BOTA Driver <a name="bota"></a>
