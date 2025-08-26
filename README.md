@@ -61,6 +61,9 @@ cd shape_reconstruction
 conda activate 9dtact
 ```
 
+If you are using the **production** version of 9DTact, you do **not** need to calibrate the camera and sensor.
+Please proceed directly to Step 3 (Shape Reconstruction).
+
 ### 1. Camera Calibration <a name="camera_calibration"></a>
 Before getting started, **adjust the camera focus** by rotating the lens until objects approximately 15 mm away appear clear.
 
