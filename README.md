@@ -209,7 +209,7 @@ python _4_Shape_Force_ros.py
 - [SuperMag: Vision-based Tactile Data Guided High-resolution Tactile Shape Reconstruction for Magnetic Tactile Sensors](https://arxiv.org/pdf/2507.20002), Hou et al., IROS 2025
 - [UTact: Underwater Vision-Based Tactile Sensor with Geometry Reconstruction and Contact Force Estimation](https://advanced.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adrr.202500091), Zhang et al., Advanced Robotics Research 2025
 - [exUMI: Extensible Robot Teaching System with Action-aware Task-agnostic Tactile Representation](https://openreview.net/attachment?id=b86nyIOJWq&name=pdf), Xu et al., CoRL 2025
-
+- [TacScope: A Miniaturized Vision-Based Tactile Sensor for Surgical Applications](https://advanced.onlinelibrary.wiley.com/doi/10.1002/adrr.202500117), Prince et al., Advanced Robotics Research 2025
 
 ## Reference
 ```
