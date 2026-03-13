@@ -1,4 +1,5 @@
 # 9DTact
+### Feel free to use this open-source project for commercial purposes!
 
 # Table of contents
 1. [Overview](#overview)
