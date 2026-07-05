@@ -214,7 +214,7 @@ python _4_Shape_Force_ros.py
 - [Design and application of multimodal visual-tactile sensor for object information perception](https://www.sciencedirect.com/science/article/pii/S0924424726000804?via%3Dihub), Wang et al., Sensors and Actuators 2026
 - [A Low-Cost Vision-Based Tactile Gripper with Pretraining Learning for Contact-Rich Manipulation](https://arxiv.org/pdf/2602.00514), Liu et al., arxiv 2026
 - [SpikingTac: A Miniaturized Neuromorphic Visuotactile Sensor for High-Precision Dynamic Tactile Imprint Tracking](https://arxiv.org/pdf/2602.23654), Jiang et al., arxiv 2026
-
+- [Heterogeneous Tactile Transformer](https://arxiv.org/pdf/2606.29948), Bi et al., arxiv 2026
 
 ## Reference
 ```
