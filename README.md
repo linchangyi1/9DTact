@@ -215,6 +215,7 @@ python _4_Shape_Force_ros.py
 - [A Low-Cost Vision-Based Tactile Gripper with Pretraining Learning for Contact-Rich Manipulation](https://arxiv.org/pdf/2602.00514), Liu et al., arxiv 2026
 - [SpikingTac: A Miniaturized Neuromorphic Visuotactile Sensor for High-Precision Dynamic Tactile Imprint Tracking](https://arxiv.org/pdf/2602.23654), Jiang et al., arxiv 2026
 - [Heterogeneous Tactile Transformer](https://arxiv.org/pdf/2606.29948), Bi et al., arxiv 2026
+- [ViHaTeleop: A Low-Cost, Lightweight Visual-Haptic Teleoperation System for Dexterous Manipulation Learning](https://arxiv.org/pdf/2608.16572), Zhu et al., arxiv 2026
 
 ## Reference
 ```
